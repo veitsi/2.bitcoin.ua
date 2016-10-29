@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="https://kuna.io/favicon.ico" rel="shortcut icon"><script src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/analytics.js" async=""></script><script type="text/javascript">
+//<![CDATA[
+window.gon={};gon.env="production";gon.local="en";gon.market={"sort_order":1,"visible":true,"id":"btcuah","code":3,"base_unit":"btc","quote_unit":"uah","bid":{"currency":"uah","fixed":0,"trade_fixed":0},"ask":{"currency":"btc","fixed":4,"trade_fixed":4},"quote_instant_withdraw":true};gon.ticker={"low":"17550.0","high":"18000.0","last":"17740.0","open":17560.0,"volume":"23.8984","sell":"18000.0","buy":"17690.0","at":1477752702};gon.markets={"btcuah":{"name":"BTC/UAH","base_unit":"btc","quote_unit":"uah"}};gon.fees={"btcuah_ask_fee":0.0025,"btcuah_bid_fee":0.0025};gon.pusher={"key":"4b6a8b2c758be4e58868","wsHost":"pusher.kuna.io","wsPort":"8080","wssPort":"443","encrypted":true};gon.clipboard={"click":"Copy","done":"Copied"};gon.i18n={"brand":"Kuna Exchange","ask":"Ask","bid":"Bid","cancel":"Cancel","latest_trade":"translation missing: en.private.markets.order_book.latest_trade","switch":{"notification":"translation missing: en.private.markets.settings.notification","sound":"translation missing: en.private.markets.settings.sound"},"notification":{"title":"Kuna Exchange","enabled":"Notification enabled.","new_trade":" %{kind} order # %{id} executed at %{price} %{quote_unit} for %{volume} %{base_unit}."},"time":{"minute":"translation missing: en.chart.minute","hour":"translation missing: en.chart.hour","day":"translation missing: en.chart.day","week":"translation missing: en.chart.week","month":"translation missing: en.chart.month","year":"translation missing: en.chart.year","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"months_shorten":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"days_of_week":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},"chart":{"price":"Price","volume":"Volume","open":"translation missing: en.chart.open","high":"translation missing: en.chart.high","low":"translation missing: en.chart.low","close":"translation missing: en.chart.close","candlestick":"translation missing: en.chart.candlestick","line":"translation missing: en.chart.line","zoom":"translation missing: en.chart.zoom","depth":"translation missing: en.chart.depth","depth_title":"translation missing: en.chart.depth_title"},"place_order":{"confirmation":"Confirmation","confirm_submit":"CONFIRM","confirm_cancel":"Do you want to cancel order?","price":"translation missing: en.private.markets.place_order.price","volume":"translation missing: en.private.markets.place_order.amount","sum":"translation missing: en.private.markets.place_order.total","price_high":"translation missing: en.private.markets.place_order.price_high","price_low":"translation missing: en.private.markets.place_order.price_low","full_bid":"translation missing: en.private.markets.place_order.full_bid","full_ask":"translation missing: en.private.markets.place_order.full_ask"},"trade_state":{"new":"New","partial":"Partial"},"withdraw":{"processing":"Withdrawal is being processed"}};gon.currencies={"uah":{"code":"uah","symbol":"₴","isCoin":false,"trade_precision":0},"btc":{"code":"btc","symbol":"฿","isCoin":true,"trade_precision":4},"kun":{"code":"kun","symbol":"K","isCoin":true,"trade_precision":0}};gon.fiat_currency="uah";gon.tickers={"btcuah":{"name":"BTC/UAH","base_unit":"btc","quote_unit":"uah","low":"17550.0","high":"18000.0","last":"17740.0","open":17560.0,"volume":"23.8984","sell":"18000.0","buy":"17690.0","at":1477752702}};gon.asks=[["18000.0","0.0493"],["18180.0","0.002"],["18200.0","2.0"],["18500.0","0.001"],["19250.0","0.0025"],["19300.0","0.011"],["19350.0","0.0025"],["19400.0","0.0025"],["19450.0","0.0025"],["19500.0","0.01"],["19600.0","0.0025"],["19800.0","0.0025"],["20000.0","0.051"],["21000.0","0.005"],["50000.0","0.005"],["80000.0","0.0024"],["100000.0","0.001"],["1000000.0","0.998"]];gon.bids=[["17690.0","0.3969"],["17590.0","0.068"],["17550.0","0.2764"],["17500.0","0.0791"],["17480.0","0.38"],["17400.0","0.6398"],["17295.0","0.0183"],["17210.0","0.0116"],["17103.0","0.0585"],["17100.0","0.291"],["17015.0","0.002"],["16454.0","0.0017"],["16405.0","0.0017"],["16072.0","0.003"],["15965.0","0.003"],["15850.0","0.005"],["15800.0","2.52"],["15660.0","0.0752"],["15655.0","1.92"],["15300.0","1.2604"],["15151.0","0.003"],["15000.0","2.4636"],["14950.0","0.376"],["14300.0","1.0"],["14212.0","0.5"],["12000.0","0.0039"],["11500.0","0.01"],["11000.0","0.005"],["10801.0","0.0074"],["10800.0","0.01"],["10000.0","0.1001"],["255.0","0.0001"],["252.0","0.0001"],["251.0","0.0001"],["249.0","0.0001"],["248.0","0.0001"],["247.0","0.0001"],["244.0","0.0001"],["243.0","0.0001"],["236.0","0.0001"],["232.0","0.0001"],["227.0","0.0001"],["216.0","0.0001"],["215.0","0.0001"],["206.0","0.0001"],["196.0","0.0001"],["193.0","0.0001"],["189.0","0.0001"],["188.0","0.0001"],["181.0","0.0001"],["180.0","0.0002"],["173.0","0.0001"],["172.0","0.0001"],["164.0","0.0001"],["155.0","0.0001"],["141.0","0.0001"],["140.0","0.0001"],["134.0","0.0001"],["132.0","0.0001"],["130.0","0.0001"],["128.0","0.0001"],["120.0","0.0001"],["118.0","0.0001"],["108.0","0.0001"],["105.0","0.0001"],["104.0","0.0002"],["102.0","0.0001"],["96.0","0.0001"],["86.0","0.0001"],["85.0","0.0001"],["79.0","0.0001"],["75.0","0.0002"],["74.0","0.0002"],["67.0","0.0001"],["65.0","0.0001"],["59.0","0.0001"],["56.0","0.0002"],["49.0","0.0001"],["42.0","0.0001"],["40.0","0.0001"],["34.0","0.0001"],["28.0","0.0002"],["27.0","0.0001"],["18.0","0.0001"],["17.0","0.0001"],["5.0","0.0072"],["2.0","0.0003"],["1.0","10.169"]];gon.trades=[{"tid":3653,"type":"buy","date":1477752220,"price":"17740.0","amount":"0.055"},{"tid":3652,"type":"sell","date":1477750702,"price":"17700.0","amount":"0.47"},{"tid":3651,"type":"sell","date":1477749827,"price":"17820.0","amount":"0.429"},{"tid":3650,"type":"buy","date":1477749162,"price":"17999.0","amount":"0.1539"},{"tid":3649,"type":"sell","date":1477748867,"price":"17700.0","amount":"0.56"},{"tid":3648,"type":"sell","date":1477748535,"price":"17960.0","amount":"0.255"},{"tid":3647,"type":"buy","date":1477746951,"price":"17999.0","amount":"0.0411"},{"tid":3646,"type":"sell","date":1477746530,"price":"17999.0","amount":"0.005"},{"tid":3645,"type":"buy","date":1477745655,"price":"18000.0","amount":"0.0001"},{"tid":3644,"type":"sell","date":1477744614,"price":"17850.0","amount":"0.78"},{"tid":3643,"type":"buy","date":1477743304,"price":"17990.0","amount":"0.22"},{"tid":3642,"type":"buy","date":1477743121,"price":"17860.0","amount":"0.42"},{"tid":3641,"type":"buy","date":1477741357,"price":"17840.0","amount":"0.189"},{"tid":3640,"type":"sell","date":1477740510,"price":"17780.0","amount":"0.54"},{"tid":3639,"type":"buy","date":1477738843,"price":"17910.0","amount":"0.85"},{"tid":3638,"type":"buy","date":1477737228,"price":"17770.0","amount":"0.77"},{"tid":3637,"type":"sell","date":1477736835,"price":"17730.0","amount":"0.132"},{"tid":3636,"type":"sell","date":1477735085,"price":"17880.0","amount":"0.4"},{"tid":3635,"type":"buy","date":1477735062,"price":"17888.0","amount":"0.0011"},{"tid":3634,"type":"buy","date":1477735030,"price":"17888.0","amount":"0.015"},{"tid":3633,"type":"buy","date":1477734602,"price":"17888.0","amount":"0.0093"},{"tid":3632,"type":"buy","date":1477734601,"price":"17800.0","amount":"0.0037"},{"tid":3631,"type":"sell","date":1477734305,"price":"17700.0","amount":"0.0111"},{"tid":3630,"type":"buy","date":1477733095,"price":"17750.0","amount":"0.181"},{"tid":3629,"type":"sell","date":1477731974,"price":"17690.0","amount":"0.0531"},{"tid":3628,"type":"sell","date":1477730453,"price":"17740.0","amount":"0.472"},{"tid":3627,"type":"buy","date":1477728574,"price":"17800.0","amount":"0.4633"},{"tid":3626,"type":"buy","date":1477728574,"price":"17800.0","amount":"0.0037"},{"tid":3625,"type":"buy","date":1477728041,"price":"17710.0","amount":"0.0014"},{"tid":3624,"type":"buy","date":1477727964,"price":"17600.0","amount":"0.2658"},{"tid":3623,"type":"buy","date":1477726773,"price":"17600.0","amount":"0.125"},{"tid":3622,"type":"buy","date":1477725806,"price":"17600.0","amount":"0.2092"},{"tid":3621,"type":"buy","date":1477725806,"price":"17600.0","amount":"0.3908"},{"tid":3620,"type":"buy","date":1477724383,"price":"17600.0","amount":"0.0001"},{"tid":3619,"type":"buy","date":1477723944,"price":"17590.0","amount":"0.086"},{"tid":3618,"type":"sell","date":1477723944,"price":"17590.0","amount":"0.068"},{"tid":3617,"type":"buy","date":1477723791,"price":"17600.0","amount":"0.0532"},{"tid":3616,"type":"buy","date":1477721023,"price":"17590.0","amount":"0.59"},{"tid":3615,"type":"sell","date":1477708787,"price":"17580.0","amount":"0.424"},{"tid":3614,"type":"buy","date":1477707676,"price":"17590.0","amount":"0.71"},{"tid":3613,"type":"buy","date":1477705788,"price":"17580.0","amount":"0.488"},{"tid":3612,"type":"buy","date":1477705435,"price":"17580.0","amount":"0.54"},{"tid":3611,"type":"buy","date":1477701861,"price":"17570.0","amount":"0.85"},{"tid":3610,"type":"buy","date":1477700048,"price":"17560.0","amount":"0.66"},{"tid":3609,"type":"buy","date":1477699999,"price":"17550.0","amount":"0.143"},{"tid":3608,"type":"buy","date":1477698611,"price":"17550.0","amount":"0.3536"},{"tid":3607,"type":"sell","date":1477698611,"price":"17550.0","amount":"0.2764"},{"tid":3606,"type":"buy","date":1477697345,"price":"17580.0","amount":"0.55"},{"tid":3605,"type":"sell","date":1477696106,"price":"17560.0","amount":"0.44"},{"tid":3604,"type":"buy","date":1477695954,"price":"17580.0","amount":"0.111"},{"tid":3603,"type":"buy","date":1477694882,"price":"17570.0","amount":"0.68"},{"tid":3602,"type":"buy","date":1477692784,"price":"17550.0","amount":"0.1906"},{"tid":3601,"type":"sell","date":1477692784,"price":"17550.0","amount":"0.2764"},{"tid":3600,"type":"buy","date":1477692757,"price":"17590.0","amount":"0.71"},{"tid":3599,"type":"sell","date":1477689446,"price":"17560.0","amount":"0.199"},{"tid":3598,"type":"sell","date":1477689154,"price":"17590.0","amount":"0.36"},{"tid":3597,"type":"buy","date":1477686808,"price":"17600.0","amount":"0.4059"},{"tid":3596,"type":"buy","date":1477686807,"price":"17600.0","amount":"0.33"},{"tid":3595,"type":"buy","date":1477686807,"price":"17600.0","amount":"0.1141"},{"tid":3594,"type":"buy","date":1477685663,"price":"17580.0","amount":"0.319"},{"tid":3593,"type":"sell","date":1477685095,"price":"17560.0","amount":"0.74"},{"tid":3592,"type":"buy","date":1477684034,"price":"17600.0","amount":"0.0025"},{"tid":3591,"type":"buy","date":1477682622,"price":"17600.0","amount":"0.051"},{"tid":3590,"type":"sell","date":1477681592,"price":"17580.0","amount":"0.7"},{"tid":3589,"type":"buy","date":1477680247,"price":"17590.0","amount":"0.35"},{"tid":3588,"type":"sell","date":1477679418,"price":"17560.0","amount":"0.39"},{"tid":3587,"type":"sell","date":1477678702,"price":"17580.0","amount":"0.48"},{"tid":3586,"type":"buy","date":1477676428,"price":"17590.0","amount":"0.135"},{"tid":3585,"type":"buy","date":1477675181,"price":"17590.0","amount":"0.34"},{"tid":3584,"type":"buy","date":1477673902,"price":"17570.0","amount":"0.33"},{"tid":3583,"type":"sell","date":1477673767,"price":"17570.0","amount":"0.091"},{"tid":3582,"type":"buy","date":1477672743,"price":"17600.0","amount":"0.0555"},{"tid":3581,"type":"buy","date":1477672501,"price":"17600.0","amount":"0.0085"},{"tid":3580,"type":"sell","date":1477671999,"price":"17560.0","amount":"0.46"},{"tid":3579,"type":"buy","date":1477670279,"price":"17590.0","amount":"0.39"},{"tid":3578,"type":"buy","date":1477670050,"price":"17560.0","amount":"0.371"},{"tid":3577,"type":"buy","date":1477668326,"price":"17560.0","amount":"0.6"},{"tid":3576,"type":"sell","date":1477665853,"price":"17560.0","amount":"0.207"},{"tid":3575,"type":"sell","date":1477664813,"price":"17570.0","amount":"0.75"},{"tid":3574,"type":"buy","date":1477663083,"price":"17590.0","amount":"0.238"}];gon.my_trades=[{"id":3458,"kind":"bid","at":1477510522,"price":"17100.0","volume":"0.4595","market":"btcuah"},{"id":3453,"kind":"bid","at":1477506176,"price":"17015.0","volume":"0.0231","market":"btcuah"},{"id":3445,"kind":"bid","at":1477500176,"price":"16750.0","volume":"0.0974","market":"btcuah"},{"id":3422,"kind":"bid","at":1477481455,"price":"16800.0","volume":"0.8928","market":"btcuah"},{"id":3418,"kind":"bid","at":1477478003,"price":"16780.0","volume":"0.0536","market":"btcuah"},{"id":3417,"kind":"bid","at":1477478003,"price":"16780.0","volume":"0.8414","market":"btcuah"},{"id":3412,"kind":"bid","at":1477475377,"price":"16780.0","volume":"0.19","market":"btcuah"},{"id":3411,"kind":"bid","at":1477475220,"price":"16750.0","volume":"0.4002","market":"btcuah"},{"id":3409,"kind":"bid","at":1477471529,"price":"16615.0","volume":"0.019","market":"btcuah"},{"id":3403,"kind":"bid","at":1477466083,"price":"16600.0","volume":"0.0692","market":"btcuah"},{"id":3398,"kind":"bid","at":1477462160,"price":"16600.0","volume":"0.0143","market":"btcuah"},{"id":3388,"kind":"bid","at":1477433819,"price":"16710.0","volume":"0.7","market":"btcuah"},{"id":3386,"kind":"bid","at":1477432930,"price":"16710.0","volume":"0.3","market":"btcuah"},{"id":3385,"kind":"bid","at":1477432892,"price":"16709.0","volume":"0.105","market":"btcuah"},{"id":3348,"kind":"bid","at":1477383728,"price":"16551.0","volume":"0.2775","market":"btcuah"},{"id":3347,"kind":"bid","at":1477383431,"price":"16551.0","volume":"0.0325","market":"btcuah"},{"id":3333,"kind":"ask","at":1477350886,"price":"16749.0","volume":"0.31","market":"btcuah"},{"id":3302,"kind":"bid","at":1477321229,"price":"16611.0","volume":"0.37","market":"btcuah"},{"id":3254,"kind":"bid","at":1477257149,"price":"16600.0","volume":"0.0358","market":"btcuah"},{"id":3233,"kind":"bid","at":1477239401,"price":"16501.0","volume":"0.0302","market":"btcuah"},{"id":3229,"kind":"bid","at":1477235729,"price":"16501.0","volume":"0.161","market":"btcuah"},{"id":3226,"kind":"bid","at":1477232575,"price":"16501.0","volume":"0.201","market":"btcuah"},{"id":3221,"kind":"bid","at":1477226376,"price":"16501.0","volume":"0.1505","market":"btcuah"},{"id":3210,"kind":"bid","at":1477216817,"price":"16360.0","volume":"0.0919","market":"btcuah"},{"id":3208,"kind":"bid","at":1477216597,"price":"16400.0","volume":"0.0165","market":"btcuah"},{"id":3207,"kind":"bid","at":1477216417,"price":"16360.0","volume":"0.331","market":"btcuah"},{"id":3206,"kind":"bid","at":1477216417,"price":"16360.0","volume":"0.435","market":"btcuah"},{"id":3187,"kind":"bid","at":1477182965,"price":"16360.0","volume":"1.789","market":"btcuah"},{"id":3183,"kind":"bid","at":1477176918,"price":"16360.0","volume":"0.165","market":"btcuah"},{"id":3182,"kind":"bid","at":1477176820,"price":"16360.0","volume":"0.7","market":"btcuah"},{"id":3179,"kind":"bid","at":1477176182,"price":"16330.0","volume":"0.14","market":"btcuah"},{"id":3178,"kind":"bid","at":1477175171,"price":"16360.0","volume":"0.06","market":"btcuah"},{"id":3177,"kind":"bid","at":1477175093,"price":"16360.0","volume":"0.7","market":"btcuah"},{"id":3175,"kind":"bid","at":1477172912,"price":"16360.0","volume":"0.1","market":"btcuah"},{"id":3172,"kind":"bid","at":1477170123,"price":"16355.0","volume":"0.0973","market":"btcuah"},{"id":3171,"kind":"bid","at":1477170123,"price":"16150.0","volume":"0.0203","market":"btcuah"},{"id":3103,"kind":"bid","at":1477067575,"price":"16071.0","volume":"0.145","market":"btcuah"},{"id":3071,"kind":"bid","at":1477032867,"price":"16001.0","volume":"0.031","market":"btcuah"},{"id":3054,"kind":"bid","at":1476997225,"price":"16001.0","volume":"0.08","market":"btcuah"},{"id":3041,"kind":"ask","at":1476983178,"price":"16149.0","volume":"0.0602","market":"btcuah"},{"id":3035,"kind":"ask","at":1476975450,"price":"16149.0","volume":"0.103","market":"btcuah"},{"id":3033,"kind":"ask","at":1476973996,"price":"16149.0","volume":"0.0135","market":"btcuah"},{"id":3022,"kind":"ask","at":1476965314,"price":"16149.0","volume":"0.0001","market":"btcuah"},{"id":3014,"kind":"ask","at":1476959172,"price":"16149.0","volume":"0.08","market":"btcuah"},{"id":2987,"kind":"bid","at":1476912348,"price":"15950.0","volume":"0.19","market":"btcuah"},{"id":2976,"kind":"ask","at":1476900123,"price":"16149.0","volume":"0.002","market":"btcuah"},{"id":2975,"kind":"ask","at":1476900103,"price":"16149.0","volume":"0.012","market":"btcuah"},{"id":2973,"kind":"ask","at":1476898574,"price":"16149.0","volume":"0.002","market":"btcuah"},{"id":2972,"kind":"ask","at":1476898535,"price":"16149.0","volume":"0.051","market":"btcuah"},{"id":2967,"kind":"ask","at":1476893364,"price":"16149.0","volume":"0.102","market":"btcuah"},{"id":2965,"kind":"ask","at":1476891109,"price":"16149.0","volume":"0.011","market":"btcuah"},{"id":2964,"kind":"ask","at":1476890784,"price":"16149.0","volume":"0.005","market":"btcuah"},{"id":2816,"kind":"bid","at":1476678989,"price":"16400.0","volume":"0.167","market":"btcuah"},{"id":2780,"kind":"bid","at":1476635921,"price":"16400.0","volume":"0.181","market":"btcuah"},{"id":2776,"kind":"bid","at":1476631087,"price":"16400.0","volume":"0.084","market":"btcuah"},{"id":2773,"kind":"ask","at":1476623043,"price":"16599.0","volume":"0.0042","market":"btcuah"},{"id":2772,"kind":"ask","at":1476622955,"price":"16599.0","volume":"0.4","market":"btcuah"},{"id":2719,"kind":"bid","at":1476538785,"price":"16400.0","volume":"0.4229","market":"btcuah"},{"id":2710,"kind":"bid","at":1476530480,"price":"16400.0","volume":"0.07","market":"btcuah"},{"id":2709,"kind":"bid","at":1476529629,"price":"16400.0","volume":"0.0071","market":"btcuah"},{"id":2678,"kind":"ask","at":1476473313,"price":"16698.0","volume":"0.4987","market":"btcuah"},{"id":2651,"kind":"bid","at":1476427316,"price":"16400.0","volume":"0.4025","market":"btcuah"},{"id":2649,"kind":"bid","at":1476424871,"price":"16400.0","volume":"0.0829","market":"btcuah"},{"id":2648,"kind":"bid","at":1476419589,"price":"16400.0","volume":"0.0146","market":"btcuah"},{"id":2626,"kind":"ask","at":1476388522,"price":"16650.0","volume":"0.5","market":"btcuah"},{"id":2625,"kind":"ask","at":1476388522,"price":"16580.0","volume":"0.5","market":"btcuah"},{"id":2443,"kind":"ask","at":1476160376,"price":"16190.0","volume":"0.747","market":"btcuah"},{"id":2442,"kind":"ask","at":1476160112,"price":"16190.0","volume":"0.253","market":"btcuah"},{"id":532,"kind":"ask","at":1470154906,"price":"15010.0","volume":"0.0937","market":"btcuah"},{"id":526,"kind":"ask","at":1469947437,"price":"15800.0","volume":"0.0438","market":"btcuah"},{"id":525,"kind":"ask","at":1469947413,"price":"15805.0","volume":"0.036","market":"btcuah"},{"id":524,"kind":"ask","at":1469947388,"price":"15810.0","volume":"0.0575","market":"btcuah"},{"id":523,"kind":"ask","at":1469947362,"price":"15810.0","volume":"0.036","market":"btcuah"},{"id":521,"kind":"ask","at":1469866729,"price":"16249.0","volume":"0.013","market":"btcuah"},{"id":502,"kind":"ask","at":1469553370,"price":"16099.0","volume":"0.0098","market":"btcuah"},{"id":501,"kind":"ask","at":1469553038,"price":"16099.0","volume":"0.1578","market":"btcuah"}];gon.my_orders=[];
+//]]>
+</script><link href="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/css.css" media="screen" rel="stylesheet"><link href="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/market-ac919fb52f3df05fdd7e556e0eadcabe81ebd0dde2b7187ca07c1.css" media="all" rel="stylesheet"><script src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/market-6cbc8c4a28af888ede48d97b2a9df39cbce0b5c0aae1695a85948c.js"></script><!--[if lt IE 9]><script src="/assets/html5-86a1ff31caeb0f86d224cf14256e632a48069a8ae0438b14d93a91f8639effe1.js"></script><![endif]--><title>Kuna — cryptocurrency exchange</title><meta content="First public cryptocurrency exchange" name="description"><meta content="Kuna Exchange" name="keywords"><meta content="kuna bitcoin agency" name="author"><meta content="KUNA Exchange" property="og:title"><meta content="website" property="og:type"><meta content="Первая публичная биржа криптоактивов" property="og:description"><meta content="https://kuna.io" property="og:url"><meta content="https://kuna.io/kuna-exchange.png" property="og:image"><meta content="https://kuna.io/kuna-exchange-m.png" property="og:image"><meta content="authenticity_token" name="csrf-param">
+<meta content="kNopW+FWjk0EWQgcIm6U62M4VLc/xuYxOVXxHHy0ARM=" name="csrf-token"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48841059-7', 'auto');
+ga('send', 'pageview');</script></head><body data-lang="en" id="markets-show"><audio id="success-fx" preload="preload"><source src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/success.mp3"></audio><audio id="warning-fx" preload="preload"><source src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/warning.mp3"></audio><header class="navbar navbar-default navbar-static-top" role="navigation"><div class="container"><ul class="nav navbar-nav navbar-left" id="menu"><a class="navbar-brand" href="https://kuna.io/"><img alt="Logo b8fe31f52ff22786224afd4962d8ea28d8f76c1d3ad3a9c3cd18d01337be3a4f" src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/logo-b8fe31f52ff22786224afd4962d8ea28d8f76c1d3ad3a9c3cd18d01.png"></a></ul><ul class="list-unstyled header-nav pull-left"><li><div class="active">Trades</div></li><li><a href="https://kuna.io/documents/api">API</a></li><li><a href="http://investors.kuna.io/">News</a></li><li><a href="https://kuna.io/documents/fees">Fees</a></li></ul><ul class="nav navbar-nav navbar-right"><div class="top-group"><div class="language-menu"><div class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>English</span><b class="caret"></b></a><ul class="dropdown-menu"><li><a href="https://kuna.io/?lang=ru">Русский</a></li><li><a href="https://kuna.io/?lang=ua">Українська</a></li><li><a href="https://kuna.io/?lang=en">English</a></li></ul></div></div><a class="signup" href="https://kuna.io/signup">Sign up</a><a class="session-btn signin" href="https://kuna.io/signin">Sign in</a></div></ul></div></header><div id="wrap"><div class="content"><div data-highcharts-chart="0" id="chart"><div style="position: relative; overflow: hidden; width: 1291px; height: 400px; text-align: left; line-height: normal; z-index: 0; left: 0px; top: 0.800003px;" id="highcharts-0" class="highcharts-container"><svg height="400" width="1291" xmlns="http://www.w3.org/2000/svg" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" version="1.1"><desc>Created with Highcharts 4.2.3</desc><defs><clipPath id="highcharts-1"><rect height="354" width="1211" y="0" x="0"></rect></clipPath><linearGradient id="highcharts-4" y2="1" x2="0" y1="0" x1="0"><stop stop-opacity="0.1" stop-color="rgb(17,160,255)" offset="0"></stop><stop stop-opacity="0" stop-color="rgb(17,160,255)" offset="1"></stop><stop stop-opacity="0" stop-color="rgb(17,160,255)" offset="2"></stop></linearGradient></defs><rect class=" highcharts-background" fill="#FFFFFF" height="400" width="1291" y="0" x="0"></rect><g zIndex="1" class="highcharts-grid"></g><g zIndex="1" class="highcharts-grid"><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 364.5 L 1254 364.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 293.5 L 1254 293.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 222.5 L 1254 222.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 152.5 L 1254 152.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 81.5 L 1254 81.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 9.5 L 1254 9.5" fill="none"></path></g><g zIndex="1" class="highcharts-grid"><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 364.5 L 1254 364.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 293.5 L 1254 293.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 222.5 L 1254 222.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 152.5 L 1254 152.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 81.5 L 1254 81.5" fill="none"></path><path opacity="1" zIndex="1" stroke-width="1" stroke="#D8D8D8" d="M 43 9.5 L 1254 9.5" fill="none"></path></g><g zIndex="2" class="highcharts-axis"><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 67.5 364 L 67.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 168.5 364 L 168.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 269.5 364 L 269.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 370.5 364 L 370.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 471.5 364 L 471.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 572.5 364 L 572.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 673.5 364 L 673.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 774.5 364 L 774.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 875.5 364 L 875.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 975.5 364 L 975.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 1076.5 364 L 1076.5 374" fill="none"></path><path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 1177.5 364 L 1177.5 374" fill="none"></path><path zIndex="7" stroke-width="1" stroke="#C0D0E0" d="M 43 364.5 L 1254 364.5" fill="none"></path></g><g zIndex="2" class="highcharts-axis"></g><g zIndex="2" class="highcharts-axis"></g><g zIndex="3" class="highcharts-series-group"><path d="M 0 0" zIndex="-1" fill-opacity="0.25" fill="#11a0ff"></path><g clip-path="url(#highcharts-1)" transform="translate(43,10) scale(1 1)" zIndex="0.1" class="highcharts-series highcharts-series-0"><path zIndex="0" d="M 25.229166666666664 104.92559999999997 L 75.6875 105.2088 L 126.14583333333331 104.92559999999997 L 176.60416666666666 104.92559999999997 L 227.06249999999997 104.78399999999999 L 277.5208333333333 104.78399999999999 L 327.9791666666667 105.35039999999998 L 378.4375 105.2088 L 428.8958333333333 105.49199999999999 L 479.3541666666667 105.2088 L 529.8125 105.06719999999999 L 580.2708333333333 105.06719999999999 L 630.7291666666666 105.06719999999999 L 681.1874999999999 105.06719999999999 L 731.6458333333333 105.06719999999999 L 782.1041666666666 104.78399999999999 L 832.5624999999999 104.78399999999999 L 883.0208333333333 102.80159999999998 L 933.4791666666666 100.8192 L 983.9374999999999 102.37679999999997 L 1034.3958333333333 101.38559999999998 L 1084.8541666666667 99.11999999999998 L 1135.3125 99.13415999999998 L 1185.7708333333335 102.80159999999998 L 1185.7708333333335 354 L 1135.3125 354 L 1084.8541666666667 354 L 1034.3958333333333 354 L 983.9374999999999 354 L 933.4791666666666 354 L 883.0208333333333 354 L 832.5624999999999 354 L 782.1041666666666 354 L 731.6458333333333 354 L 681.1874999999999 354 L 630.7291666666666 354 L 580.2708333333333 354 L 529.8125 354 L 479.3541666666667 354 L 428.8958333333333 354 L 378.4375 354 L 327.9791666666667 354 L 277.5208333333333 354 L 227.06249999999997 354 L 176.60416666666666 354 L 126.14583333333331 354 L 75.6875 354 L 25.229166666666664 354" fill="url(#highcharts-4)"></path><path stroke-linecap="round" stroke-linejoin="round" zIndex="1" stroke-width="1" stroke="#11a0ff" d="M 25.229166666666664 104.92559999999997 L 75.6875 105.2088 L 126.14583333333331 104.92559999999997 L 176.60416666666666 104.92559999999997 L 227.06249999999997 104.78399999999999 L 277.5208333333333 104.78399999999999 L 327.9791666666667 105.35039999999998 L 378.4375 105.2088 L 428.8958333333333 105.49199999999999 L 479.3541666666667 105.2088 L 529.8125 105.06719999999999 L 580.2708333333333 105.06719999999999 L 630.7291666666666 105.06719999999999 L 681.1874999999999 105.06719999999999 L 731.6458333333333 105.06719999999999 L 782.1041666666666 104.78399999999999 L 832.5624999999999 104.78399999999999 L 883.0208333333333 102.80159999999998 L 933.4791666666666 100.8192 L 983.9374999999999 102.37679999999997 L 1034.3958333333333 101.38559999999998 L 1084.8541666666667 99.11999999999998 L 1135.3125 99.13415999999998 L 1185.7708333333335 102.80159999999998" fill="none"></path><path style="" class=" highcharts-tracker" zIndex="2" stroke-width="21" stroke="rgba(192,192,192,0.0001)" visibility="visible" stroke-linejoin="round" d="M 15.229166666666664 104.92559999999997 L 25.229166666666664 104.92559999999997 L 75.6875 105.2088 L 126.14583333333331 104.92559999999997 L 176.60416666666666 104.92559999999997 L 227.06249999999997 104.78399999999999 L 277.5208333333333 104.78399999999999 L 327.9791666666667 105.35039999999998 L 378.4375 105.2088 L 428.8958333333333 105.49199999999999 L 479.3541666666667 105.2088 L 529.8125 105.06719999999999 L 580.2708333333333 105.06719999999999 L 630.7291666666666 105.06719999999999 L 681.1874999999999 105.06719999999999 L 731.6458333333333 105.06719999999999 L 782.1041666666666 104.78399999999999 L 832.5624999999999 104.78399999999999 L 883.0208333333333 102.80159999999998 L 933.4791666666666 100.8192 L 983.9374999999999 102.37679999999997 L 1034.3958333333333 101.38559999999998 L 1084.8541666666667 99.11999999999998 L 1135.3125 99.13415999999998 L 1185.7708333333335 102.80159999999998 L 1195.7708333333335 102.80159999999998" fill="none"></path></g><g style="" clip-path="url(#highcharts-2)" transform="translate(43,10) scale(1 1)" zIndex="0.1" class="highcharts-markers highcharts-series-0 highcharts-tracker"><path visibility="hidden" stroke-width="1" stroke="#FFFFFF" d="M 75 99.2088 C 82.992 99.2088 82.992 111.2088 75 111.2088 C 67.008 111.2088 67.008 99.2088 75 99.2088 Z" fill="#11a0ff"></path></g><g clip-path="url(#highcharts-1)" style="" transform="translate(43,10) scale(1 1)" zIndex="0.1" class="highcharts-series highcharts-series-1 highcharts-tracker"><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="48" width="25" y="306.5" x="12.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="33" width="25" y="321.5" x="63.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="17" width="25" y="337.5" x="113.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="43" width="25" y="311.5" x="163.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="27" width="25" y="327.5" x="214.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="68" width="25" y="286.5" x="264.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="20" width="25" y="334.5" x="315.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="66" width="25" y="288.5" x="365.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="61" width="25" y="293.5" x="416.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="59" width="25" y="295.5" x="466.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="36" width="25" y="318.5" x="517.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="40" width="25" y="314.5" x="567.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="0" width="25" y="354.5" x="618.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="0" width="25" y="354.5" x="668.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="0" width="25" y="354.5" x="719.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="28" width="25" y="326.5" x="769.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="35" width="25" y="319.5" x="819.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="33" width="25" y="321.5" x="870.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="24" width="25" y="330.5" x="920.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="32" width="25" y="322.5" x="971.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="56" width="25" y="298.5" x="1021.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="50" width="25" y="304.5" x="1072.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="36" width="25" y="318.5" x="1122.5"></rect><rect ry="0" rx="0" fill="#dbe2e6" stroke-width="1" stroke="none" height="34" width="25" y="320.5" x="1173.5"></rect></g><g clip-path="none" transform="translate(43,10) scale(1 1)" zIndex="0.1" class="highcharts-markers highcharts-series-1"></g></g><g zIndex="7" class="highcharts-axis-labels highcharts-xaxis-labels"><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="68.22916666666666">18:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="169.14583333333331">20:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="270.0625">22:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="370.9791666666667"><tspan>29. Oct</tspan></text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="471.8958333333333">02:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="572.8125">04:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="673.7291666666666">06:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="774.6458333333333">08:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="875.5624999999999">10:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="976.4791666666666">12:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="1077.3958333333333">14:00</text><text opacity="1" y="383" transform="translate(0,0)" text-anchor="middle" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:100px;text-overflow:clip;" x="1178.3125">16:00</text></g><g zIndex="7" class="highcharts-axis-labels highcharts-yaxis-labels"><text opacity="1" y="369" transform="translate(0,0)" text-anchor="end" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="28">0k</text><text opacity="1" y="298" transform="translate(0,0)" text-anchor="end" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="28">5k</text><text opacity="1" y="227" transform="translate(0,0)" text-anchor="end" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="28">10k</text><text opacity="1" y="156" transform="translate(0,0)" text-anchor="end" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="28">15k</text><text opacity="1" y="85" transform="translate(0,0)" text-anchor="end" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="28">20k</text><text opacity="1" y="15" transform="translate(0,0)" text-anchor="end" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="28">25k</text></g><g zIndex="7" class="highcharts-axis-labels highcharts-yaxis-labels"><text opacity="1" y="369" transform="translate(0,0)" text-anchor="start" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="1269">0</text><text opacity="1" y="298" transform="translate(0,0)" text-anchor="start" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="1269">2</text><text opacity="1" y="227" transform="translate(0,0)" text-anchor="start" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="1269">4</text><text opacity="1" y="156" transform="translate(0,0)" text-anchor="start" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="1269">6</text><text opacity="1" y="85" transform="translate(0,0)" text-anchor="start" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="1269">8</text><text opacity="1" y="15" transform="translate(0,0)" text-anchor="start" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:416px;text-overflow:clip;" x="1269">10</text></g><g visibility="visible" opacity="0" transform="translate(63,-9999)" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" zIndex="8" class="highcharts-tooltip"><path transform="translate(1, 1)" stroke-width="5" stroke-opacity="0.049999999999999996" stroke="black" isShadow="true" d="M 3.5 0.5 L 110.5 0.5 C 113.5 0.5 113.5 0.5 113.5 3.5 L 113.5 41.5 C 113.5 44.5 113.5 44.5 110.5 44.5 L 61.5 44.5 55.5 50.5 49.5 44.5 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="none"></path><path transform="translate(1, 1)" stroke-width="3" stroke-opacity="0.09999999999999999" stroke="black" isShadow="true" d="M 3.5 0.5 L 110.5 0.5 C 113.5 0.5 113.5 0.5 113.5 3.5 L 113.5 41.5 C 113.5 44.5 113.5 44.5 110.5 44.5 L 61.5 44.5 55.5 50.5 49.5 44.5 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="none"></path><path transform="translate(1, 1)" stroke-width="1" stroke-opacity="0.15" stroke="black" isShadow="true" d="M 3.5 0.5 L 110.5 0.5 C 113.5 0.5 113.5 0.5 113.5 3.5 L 113.5 41.5 C 113.5 44.5 113.5 44.5 110.5 44.5 L 61.5 44.5 55.5 50.5 49.5 44.5 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="none"></path><path stroke-width="1" stroke="#11a0ff" d="M 3.5 0.5 L 110.5 0.5 C 113.5 0.5 113.5 0.5 113.5 3.5 L 113.5 41.5 C 113.5 44.5 113.5 44.5 110.5 44.5 L 61.5 44.5 55.5 50.5 49.5 44.5 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="rgba(249, 249, 249, .85)"></path><text y="20" style="font-size:12px;color:#333333;fill:#333333;" zIndex="1" x="8"><tspan style="font-size: 10px">Friday, Oct 28, 19:00</tspan><tspan dy="15" x="8" style="fill:#11a0ff">●</tspan><tspan dx="0"> Price: </tspan><tspan dx="0" style="font-weight:bold">17 570</tspan></text></g></svg></div></div><div id="trade_form"><div class="container"><div id="error-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Unable to create order</h4>
+      </div>
+      <div class="modal-body">
+        <p>Perhaps you have not enough money or ordering limit has been reached</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div><form accept-charset="UTF-8" action="/markets/btcuah/orders" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"></div><input id="ord_type" name="ord_type" value="limit" type="hidden"><div class="row"><div class="col-xs-6 col-left"><div class="input-group amount"><input class="text-field" id="origin_volume" name="origin_volume" placeholder="0" type="text"><label class="input-group-addon"><span>Quantity</span><span class="currency">BTC</span></label></div></div><div class="col-xs-6"><div class="input-group price"><input class="text-field" id="price" name="price" placeholder="0" value="17740" type="text"><label class="input-group-addon"><span>Price</span><span class="currency">UAH</span></label></div></div><div class="col-xs-4"><div class="input-group total"><input id="total" name="total" type="hidden"><label class="input-group-addon"><span class="currency">0 UAH</span></label></div></div><div class="col-xs-4"><button class="btn btn-default btn-block bid disabled" name="order_action" type="submit" value="bid">&nbsp;Buy BTC</button></div><div class="col-xs-4"><button class="btn btn-default btn-block ask disabled" name="order_action" type="submit" value="ask">Sell BTC</button></div></div></form></div></div><div class="panel panel-default" id="order_book_and_trades"><div class="container"><div class="panel-body panel-body-head"><div class="row" id="order_book_and_trades_header"><div class="col-xs-8 col-left"><h3 class="heading"><img alt="Buy e4ecef665335291f3649656b80d02ca491715fa79bd8dab4425b6b018016a9fd" src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/buy-e4ecef665335291f3649656b80d02ca491715fa79bd8dab4425b6b01.png">Buy</h3><table class="table"><thead><tr><th class="price col-xs-8">Price</th><th class="volume col-xs-8">BTC</th><th class="amount col-xs-8">UAH</th></tr></thead></table></div><div class="col-xs-8"><h3 class="heading"><img alt="Sell 85383705b34dde38528c18122a1f5769d0bf6da02a0c323e1f93ec9079afd52d" src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/sell-85383705b34dde38528c18122a1f5769d0bf6da02a0c323e1f93ec9.png">Sell</h3><table class="table table-head"><thead><tr><th class="price col-xs-8">Price</th><th class="volume col-xs-8">BTC</th><th class="amount col-xs-8">UAH</th></tr></thead></table></div><div class="col-xs-8"><h3 class="heading"><img alt="Trades 3800239cfd6411b57f7e8a3338166564181e9cae495d6f6d8918cc468ea272f2" src="Kuna%20%E2%80%94%20cryptocurrency%20exchange_files/trades-3800239cfd6411b57f7e8a3338166564181e9cae495d6f6d8918c.png">Trades</h3><table class="table table-head"><thead><tr><th class="at col-xs-4 text-left">Time</th><th class="my col-xs-1 text-left"></th><th class="price col-xs-5">Price</th><th class="volume col-xs-5">BTC</th><th class="amount col-xs-5">UAH</th></tr></thead></table></div></div></div><div class="panel-body panel-body-content"><div class="row history-list exapnded" id="order_book_body"><div class="col-xs-8 col-left"><table class="table table-hover bids"><tbody><tr data-order="0" data-price="17850.0" data-volume="0.65" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17850
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.6500</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    11602
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="0" data-price="17690.0" data-volume="0.3969" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17690
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.3969</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    7021
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="1" data-price="17590.0" data-volume="0.068" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17590
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0680</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    1196
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="2" data-price="17550.0" data-volume="0.2764" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17550
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.2764</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    4850
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="3" data-price="17500.0" data-volume="0.0791" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17500
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0791</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    1384
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="4" data-price="17480.0" data-volume="0.38" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17480
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.3800</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    6642
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="5" data-price="17400.0" data-volume="0.6398" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17400
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.6398</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    11132
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="6" data-price="17295.0" data-volume="0.0183" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17295
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0183</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    316
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="7" data-price="17210.0" data-volume="0.0116" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17210
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0116</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    199
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="8" data-price="17103.0" data-volume="0.0585" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17103
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0585</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    1000
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="9" data-price="17100.0" data-volume="0.291" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17100
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.2910</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    4976
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="10" data-price="17015.0" data-volume="0.002" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    17015
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0020</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    34
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="11" data-price="16454.0" data-volume="0.0017" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    16454
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0017</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    27
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="12" data-price="16405.0" data-volume="0.0017" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    16405
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0017</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    27
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="13" data-price="16072.0" data-volume="0.003" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    16072
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0030</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    48
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="14" data-price="15965.0" data-volume="0.003" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15965
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0030</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    47
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="15" data-price="15850.0" data-volume="0.005" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15850
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0050</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    79
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="16" data-price="15800.0" data-volume="2.52" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15800
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    2<g>.5200</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    39816
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="17" data-price="15660.0" data-volume="0.0752" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15660
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0752</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    1177
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="18" data-price="15655.0" data-volume="1.92" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15655
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    1<g>.9200</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    30057
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="19" data-price="15300.0" data-volume="1.2604" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15300
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    1<g>.2604</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    19284
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="20" data-price="15151.0" data-volume="0.003" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15151
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0030</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    45
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="21" data-price="15000.0" data-volume="2.4636" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    15000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    2<g>.4636</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    36954
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="22" data-price="14950.0" data-volume="0.376" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    14950
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.3760</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    5621
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="23" data-price="14300.0" data-volume="1.0" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    14300
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    1<g>.0000</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    14300
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="24" data-price="14212.0" data-volume="0.5" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    14212
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.5000</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    7106
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="25" data-price="12000.0" data-volume="0.0039" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    12000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0039</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    46
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="26" data-price="11500.0" data-volume="0.01" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    11500
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0100</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    115
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="27" data-price="11000.0" data-volume="0.005" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    11000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0050</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    55
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="28" data-price="10801.0" data-volume="0.0074" class="">
+  <td class="price col-xs-8 text-up"><div style="">
+    10801
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0074</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    79
+  </div></td>
+</tr>
+
+</tbody></table></div><div class="col-xs-8"><table class="table table-hover asks"><tbody><tr style="opacity: 1;" data-order="0" data-price="18000.0" data-volume="0.0493" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    18000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0493</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    887
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="1" data-price="18180.0" data-volume="0.002" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    18180
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0020</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    36
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="2" data-price="18200.0" data-volume="2.0" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    18200
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    2<g>.0000</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    36400
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="3" data-price="18500.0" data-volume="0.001" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    18500
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0010</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    18
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="4" data-price="19250.0" data-volume="0.0025" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19250
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0025</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    48
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="5" data-price="19300.0" data-volume="0.011" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19300
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0110</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    212
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="6" data-price="19350.0" data-volume="0.0025" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19350
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0025</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    48
+  </div></td>
+</tr>
+<tr style="opacity: 1;" data-order="7" data-price="19400.0" data-volume="0.0025" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19400
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0025</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    48
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="8" data-price="19450.0" data-volume="0.0025" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19450
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0025</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    48
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="9" data-price="19500.0" data-volume="0.01" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19500
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0100</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    195
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="10" data-price="19600.0" data-volume="0.0025" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19600
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0025</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    49
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="11" data-price="19800.0" data-volume="0.0025" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    19800
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0025</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    49
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="12" data-price="20000.0" data-volume="0.051" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    20000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0510</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    1020
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="13" data-price="21000.0" data-volume="0.005" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    21000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0050</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    105
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="14" data-price="50000.0" data-volume="0.005" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    50000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0050</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    250
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="15" data-price="80000.0" data-volume="0.0024" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    80000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0024</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    192
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="16" data-price="100000.0" data-volume="0.001" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    100000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.0010</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    100
+  </div></td>
+</tr>
+<tr style="opacity: 1; display: table-row;" data-order="17" data-price="1000000.0" data-volume="0.998" class="">
+  <td class="price col-xs-8 text-down"><div style="">
+    1000000
+  </div></td>
+  <td class="volume col-xs-8"><div style="">
+    0<g>.9980</g>
+  </div></td>
+  <td class="amount col-xs-8"><div style="">
+    998000
+  </div></td>
+</tr>
+</tbody></table></div><div class="col-xs-8"><table class="table all-trades"><tbody>
+
+<tr style="opacity: 1;" id="market-trade-3653" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    17:43:40
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17740
+  </div></td>
+  <td class="volume col-xs-5" title="975"><div style="">
+    0<g>.0550</g>
+  </div></td>
+  <td class="amount col-xs-5" title="975&lt;g&gt;.7000&lt;/g&gt;"><div style="">
+    975
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1;" id="market-trade-3652" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    17:18:22
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17700
+  </div></td>
+  <td class="volume col-xs-5" title="8319"><div style="">
+    0<g>.4700</g>
+  </div></td>
+  <td class="amount col-xs-5" title="8319&lt;g&gt;.0000&lt;/g&gt;"><div style="">
+    8319
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1;" id="market-trade-3651" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    17:03:47
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17820
+  </div></td>
+  <td class="volume col-xs-5" title="7644"><div style="">
+    0<g>.4290</g>
+  </div></td>
+  <td class="amount col-xs-5" title="7644&lt;g&gt;.7800&lt;/g&gt;"><div style="">
+    7644
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1;" id="market-trade-3650" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    16:52:42
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17999
+  </div></td>
+  <td class="volume col-xs-5" title="2770"><div style="">
+    0<g>.1539</g>
+  </div></td>
+  <td class="amount col-xs-5" title="2770&lt;g&gt;.0461&lt;/g&gt;"><div style="">
+    2770
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1;" id="market-trade-3649" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    16:47:47
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17700
+  </div></td>
+  <td class="volume col-xs-5" title="9912"><div style="">
+    0<g>.5600</g>
+  </div></td>
+  <td class="amount col-xs-5" title="9912&lt;g&gt;.0000&lt;/g&gt;"><div style="">
+    9912
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1;" id="market-trade-3648" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    16:42:15
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17960
+  </div></td>
+  <td class="volume col-xs-5" title="4579"><div style="">
+    0<g>.2550</g>
+  </div></td>
+  <td class="amount col-xs-5" title="4579&lt;g&gt;.8000&lt;/g&gt;"><div style="">
+    4579
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1;" id="market-trade-3647" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    16:15:51
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17999
+  </div></td>
+  <td class="volume col-xs-5" title="739"><div style="">
+    0<g>.0411</g>
+  </div></td>
+  <td class="amount col-xs-5" title="739&lt;g&gt;.7588&lt;/g&gt;"><div style="">
+    739
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1;" id="market-trade-3646" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    16:08:50
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17999
+  </div></td>
+  <td class="volume col-xs-5" title="89"><div style="">
+    0<g>.0050</g>
+  </div></td>
+  <td class="amount col-xs-5" title="89&lt;g&gt;.9950&lt;/g&gt;"><div style="">
+    89
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3645" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    15:54:15
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    18000
+  </div></td>
+  <td class="volume col-xs-5" title="1"><div style="">
+    0<g>.0001</g>
+  </div></td>
+  <td class="amount col-xs-5" title="1&lt;g&gt;.8000&lt;/g&gt;"><div style="">
+    1
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3644" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    15:36:54
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17850
+  </div></td>
+  <td class="volume col-xs-5" title="13923"><div style="">
+    0<g>.7800</g>
+  </div></td>
+  <td class="amount col-xs-5" title="13923&lt;g&gt;.0000&lt;/g&gt;"><div style="">
+    13923
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3643" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    15:15:04
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17990
+  </div></td>
+  <td class="volume col-xs-5" title="3957"><div style="">
+    0<g>.2200</g>
+  </div></td>
+  <td class="amount col-xs-5" title="3957&lt;g&gt;.8000&lt;/g&gt;"><div style="">
+    3957
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3642" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    15:12:01
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17860
+  </div></td>
+  <td class="volume col-xs-5" title="7501"><div style="">
+    0<g>.4200</g>
+  </div></td>
+  <td class="amount col-xs-5" title="7501&lt;g&gt;.2000&lt;/g&gt;"><div style="">
+    7501
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3641" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    14:42:37
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17840
+  </div></td>
+  <td class="volume col-xs-5" title="3371"><div style="">
+    0<g>.1890</g>
+  </div></td>
+  <td class="amount col-xs-5" title="3371&lt;g&gt;.7600&lt;/g&gt;"><div style="">
+    3371
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3640" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    14:28:30
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17780
+  </div></td>
+  <td class="volume col-xs-5" title="9601"><div style="">
+    0<g>.5400</g>
+  </div></td>
+  <td class="amount col-xs-5" title="9601&lt;g&gt;.2000&lt;/g&gt;"><div style="">
+    9601
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3639" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    14:00:43
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17910
+  </div></td>
+  <td class="volume col-xs-5" title="15223"><div style="">
+    0<g>.8500</g>
+  </div></td>
+  <td class="amount col-xs-5" title="15223&lt;g&gt;.5000&lt;/g&gt;"><div style="">
+    15223
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3638" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    13:33:48
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17770
+  </div></td>
+  <td class="volume col-xs-5" title="13682"><div style="">
+    0<g>.7700</g>
+  </div></td>
+  <td class="amount col-xs-5" title="13682&lt;g&gt;.9000&lt;/g&gt;"><div style="">
+    13682
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3637" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    13:27:15
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17730
+  </div></td>
+  <td class="volume col-xs-5" title="2340"><div style="">
+    0<g>.1320</g>
+  </div></td>
+  <td class="amount col-xs-5" title="2340&lt;g&gt;.3600&lt;/g&gt;"><div style="">
+    2340
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3636" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:58:05
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17880
+  </div></td>
+  <td class="volume col-xs-5" title="7152"><div style="">
+    0<g>.4000</g>
+  </div></td>
+  <td class="amount col-xs-5" title="7152&lt;g&gt;.0000&lt;/g&gt;"><div style="">
+    7152
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3635" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:57:42
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17888
+  </div></td>
+  <td class="volume col-xs-5" title="19"><div style="">
+    0<g>.0011</g>
+  </div></td>
+  <td class="amount col-xs-5" title="19&lt;g&gt;.6768&lt;/g&gt;"><div style="">
+    19
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3634" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:57:10
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17888
+  </div></td>
+  <td class="volume col-xs-5" title="268"><div style="">
+    0<g>.0150</g>
+  </div></td>
+  <td class="amount col-xs-5" title="268&lt;g&gt;.3200&lt;/g&gt;"><div style="">
+    268
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3633" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:50:02
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17888
+  </div></td>
+  <td class="volume col-xs-5" title="166"><div style="">
+    0<g>.0093</g>
+  </div></td>
+  <td class="amount col-xs-5" title="166&lt;g&gt;.3584&lt;/g&gt;"><div style="">
+    166
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3632" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:50:01
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17800
+  </div></td>
+  <td class="volume col-xs-5" title="65"><div style="">
+    0<g>.0037</g>
+  </div></td>
+  <td class="amount col-xs-5" title="65&lt;g&gt;.8600&lt;/g&gt;"><div style="">
+    65
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3631" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:45:05
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17700
+  </div></td>
+  <td class="volume col-xs-5" title="196"><div style="">
+    0<g>.0111</g>
+  </div></td>
+  <td class="amount col-xs-5" title="196&lt;g&gt;.4700&lt;/g&gt;"><div style="">
+    196
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3630" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:24:55
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17750
+  </div></td>
+  <td class="volume col-xs-5" title="3212"><div style="">
+    0<g>.1810</g>
+  </div></td>
+  <td class="amount col-xs-5" title="3212&lt;g&gt;.7500&lt;/g&gt;"><div style="">
+    3212
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3629" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    12:06:14
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17690
+  </div></td>
+  <td class="volume col-xs-5" title="939"><div style="">
+    0<g>.0531</g>
+  </div></td>
+  <td class="amount col-xs-5" title="939&lt;g&gt;.3390&lt;/g&gt;"><div style="">
+    939
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3628" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    11:40:53
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-down"><div style="">
+    17740
+  </div></td>
+  <td class="volume col-xs-5" title="8373"><div style="">
+    0<g>.4720</g>
+  </div></td>
+  <td class="amount col-xs-5" title="8373&lt;g&gt;.2799&lt;/g&gt;"><div style="">
+    8373
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3627" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    11:09:34
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17800
+  </div></td>
+  <td class="volume col-xs-5" title="8246"><div style="">
+    0<g>.4633</g>
+  </div></td>
+  <td class="amount col-xs-5" title="8246&lt;g&gt;.7400&lt;/g&gt;"><div style="">
+    8246
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3626" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    11:09:34
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17800
+  </div></td>
+  <td class="volume col-xs-5" title="65"><div style="">
+    0<g>.0037</g>
+  </div></td>
+  <td class="amount col-xs-5" title="65&lt;g&gt;.8600&lt;/g&gt;"><div style="">
+    65
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3625" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    11:00:41
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17710
+  </div></td>
+  <td class="volume col-xs-5" title="24"><div style="">
+    0<g>.0014</g>
+  </div></td>
+  <td class="amount col-xs-5" title="24&lt;g&gt;.7940&lt;/g&gt;"><div style="">
+    24
+  </div></td>
+</tr>
+
+
+<tr style="opacity: 1; display: table-row;" id="market-trade-3624" class="">
+  <td class="time text-left col-xs-4"><div style="">
+    10:59:24
+  </div></td>
+  <td class="my text-left col-xs-1"><div style="">
+    <i class="fa fa-star"></i>
+  </div></td>
+  <td class="price col-xs-5 text-up"><div style="">
+    17600
+  </div></td>
+  <td class="volume col-xs-5" title="4678"><div style="">
+    0<g>.2658</g>
+  </div></td>
+  <td class="amount col-xs-5" title="4678&lt;g&gt;.0800&lt;/g&gt;"><div style="">
+    4678
+  </div></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tbody></table></div><div style="display: none;" class="view-all-wrapper"><div class="view-all-helper"></div><a class="view-all" href="">Display all ↓</a></div></div></div></div></div></div></div><footer><div class="container"><div class="row"><div class="col-xs-8 col-left"><div class="copyright">© Kuna Exchange, 2016<br>v1.0<br>All rights reserved</div></div><div class="col-xs-6"><div class="link"><a href="https://kuna.io/documents/rules">Rules</a></div><div class="link"><a href="https://kuna.io/documents/terms">Terms and Conditions</a></div></div><div class="col-xs-5"><div class="title">Support</div><div class="link"><a href="mailto:support@kuna.io">support@kuna.io</a></div></div><div class="col-xs-5"><div class="title">We are on Facebook</div><div class="link"><a href="https://www.facebook.com/kunaexchange">facebook.com/kunaexchange</a></div></div></div></div></footer><script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body></html>
