@@ -9,7 +9,7 @@
             margin-top: -.8em;
             text-align: center;
             line-height: 1.6em;
-         }
+        }
     </style>
 
 </head>
@@ -25,9 +25,11 @@
     </span>
 </header>
 <p></p>
-<div><div id="slider" style="width: 300px; display: inline-block">
-    <div id="custom-handle" class="ui-slider-handle"></div>
-</div></div>
+<div>
+    <div id="slider" style="width: 300px; display: inline-block">
+        <div id="custom-handle" class="ui-slider-handle"></div>
+    </div>
+</div>
 
 
 <!--<form name="controls">-->
@@ -41,10 +43,11 @@
 <script src="js/canvasjs.min.js"></script>
 
 <script type="text/javascript">
-//    добавить линии поддержки на сайт
-//    сделать опрос в группах трейдерах, какие типа графиков им нужны
+    //    добавить линии поддержки на сайт
+    //    сделать опрос в группах трейдерах, какие типа графиков им нужны
 
     window.onload = function () {
+
         var chart = new CanvasJS.Chart("chartContainer",
                 {
                     title: {
@@ -68,11 +71,31 @@
                             dataPoints: []
                         }
                     ]
-                });
+                }
+        );
 
+        chart.update = function () {
+            console.log('try to update from Chart.update()');
+            var that=this;
+            $.get(that.kunaurl(360, handle.text()), function (data) {
+                console.log(that);
+                var l = data.length;
+                that.options.data[0].dataPoints = [];
+                for (var i = 0; i < l; i++) {
+                    that.options.data[0].dataPoints.push({
+                        x: 1000 + i * 100, y: [data[i][[1]], data[i][2], data[i][3], data[i][4]]
+                    });
+                }
+                that.render();
+            });
 //        {x: 1000, y: [5198, 5629, 5159, 5385]}
-
-        var handle = $( "#custom-handle" );
+        };
+        chart.kunaurl =function(period, points) {
+            return "https://kuna.io/api/v2/k.json?market=btcuah&period=" +
+                    period + "&limit=" + points;
+        };
+        console.log(chart);
+        var handle = $("#custom-handle");
         $("#slider").slider({
             value: 10, min: 5, max: 25, step: 1,
             create: function () {
@@ -83,34 +106,17 @@
                 updateChart();
             }
         });
-        function updateChart() {
-            console.log(handle.text());
-            $.get(kunaurl(360, handle.text()), function (data) {
-                //console.log(data);
-                var l = data.length;
-                chart.options.data[0].dataPoints = [];
-                for (var i = 0; i < l; i++) {
-                    chart.options.data[0].dataPoints.push({
-                        x: 1000 + i * 100, y: [data[i][[1]], data[i][2], data[i][3], data[i][4]]
-                    });
-                }
-                chart.render();
-            });
-        }
-
-        updateChart();
-
+        chart.update();
+        //updateChart();
     };
+
+
 
     //https://kuna.io/api/v2/k.json?market=btcuah&period=60&limit=3
     // period - duration of period in minutes
     // limit number of points(candlesticks)
-    function kunaurl(period, points) {
-        return "https://kuna.io/api/v2/k.json?market=btcuah&period=" + period + "&limit=" + points;
-    }
 
-    //                                {x: 1000, y: [5198, 5629, 5159, 5385]},
-    //                                {x: 2000, y: [5366, 5499, 5135, 5295]},
+
     //                                {x: 3000, y: [5296, 5378, 5154, 5248]},
     //                                {x: 4000, y: [5254, 5279, 4788, 4924]}
 </script>
